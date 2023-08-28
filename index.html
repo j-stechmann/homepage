@@ -1,13 +1,73 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+    >
+    <title>Jonathan Stechmann's Website</title>
+</head>
+<body>
+<header class="container">
+    <nav class="navbar"
+         role="navigation"
+         aria-label="main navigation"
+    >
+        <div class="navbar-brand">
+            <a role="button"
+               class="navbar-burger"
+               aria-label="menu"
+               aria-expanded="false"
+               data-target="navbar"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbar"
+             class="navbar-menu"
+        >
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="is-fullwidth">
+        <figure class="image">
+            <img src="/header.webp"
+                 alt="Ein Landschaftsbild"
+            >
+        </figure>
+        <div class="section">
+            <div class="container">
+                <h1 class="title is-1">
+                    Work in Progress :)
+                </h1>
+                <p class="subtitle">
+                    I <span class="is-italic">just</span> got this domain lol
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            © Jonathan Stechmann.
+            <a href="https://github.com/BlizzardWizzard/homepage">The source code</a> is
+            <a href="https://github.com/BlizzardWizzard/homepage/blob/master/LICENSE">licensed GPLv2</a>.
+        </p>
+    </div>
+</footer>
+<script type="module"
+        src="src/main.ts"
+></script>
+</body>
 </html>
