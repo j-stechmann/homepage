@@ -12,7 +12,8 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "sass": "^1.66.1",
-    "bulma": "^0.9.4"
+    "bulma": "^0.9.4",
+    "font-awesome": "^4.7.0"
   },
   "dependencies": {
   }

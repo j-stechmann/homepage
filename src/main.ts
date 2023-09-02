@@ -1,4 +1,5 @@
 import 'bulma';
+import 'font-awesome/scss/font-awesome.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.querySelector<HTMLAnchorElement>('a.navbar-burger');
