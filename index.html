@@ -8,7 +8,7 @@
     <title>Jonathan Stechmann's Website</title>
 </head>
 <body>
-<header class="container">
+<header>
     <nav class="navbar"
          role="navigation"
          aria-label="main navigation"
@@ -40,33 +40,46 @@
     </nav>
 </header>
 <main>
-    <div>
-        <div class="section">
-            <div class="container">
-                <h1 class="title is-1">
-                    Work in Progress :)
-                </h1>
-                <p class="subtitle">
-                    I <span class="is-italic">just</span> got this domain lol
-                </p>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="public/pexels-fox-3829230.jpg"
+                 alt="Keyboard"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="public/pexels-pixabay-270632.jpg"
+                     alt="Code"
+                />
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">
+                <div>
+                    <p>
+                        <a href="https://www.linkedin.com/in/jonathan-stechmann-b16192270"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        ><i class="fa fa-3x fa-linkedin-square"></i></a>
+                        <a href="https://github.com/BlizzardWizzard"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        ><i class="fa fa-3x fa-github-square"></i></a>
+                    </p>
+                    <p>
+                        © Jonathan Stechmann.
+                        <a href="https://github.com/BlizzardWizzard/homepage">The source code</a> is
+                        <a href="https://github.com/BlizzardWizzard/homepage/blob/master/LICENSE">licensed GPLv2</a>.
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </div>
 </main>
-
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            <a href="https://www.linkedin.com/in/jonathan-stechmann-b16192270" target="_blank" rel="noopener,noreferrer"><i class="fa fa-3x fa-linkedin-square"></i></a>
-            <a href="https://github.com/BlizzardWizzard" target="_blank" rel="noopener,noreferrer"><i class="fa fa-3x fa-github-square"></i></a>
-        </p>
-        <p>
-            © Jonathan Stechmann.
-            <a href="https://github.com/BlizzardWizzard/homepage">The source code</a> is
-            <a href="https://github.com/BlizzardWizzard/homepage/blob/master/LICENSE">licensed GPLv2</a>.
-        </p>
-    </div>
-</footer>
 <script type="module"
         src="src/main.ts"
 ></script>

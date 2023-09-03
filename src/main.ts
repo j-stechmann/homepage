@@ -1,11 +1,20 @@
-import 'bulma';
 import 'font-awesome/scss/font-awesome.scss';
+import './style.css';
+import {Swiper} from 'swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.querySelector<HTMLAnchorElement>('a.navbar-burger');
-    const navbar = document.querySelector<HTMLDivElement>('#navbar');
-    btn?.addEventListener('click', () => {
-        btn.classList.toggle('is-active');
-        navbar?.classList.toggle('is-active');
-    })
+    const swipers = document.querySelectorAll<HTMLDivElement>('div.swiper');
+    for (const swiper of swipers) {
+        new Swiper(swiper, {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoHeight: true
+        });
+    }
 });
