@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            autoHeight: true
+            autoHeight: false
         });
     }
 });

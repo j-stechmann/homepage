@@ -5,7 +5,19 @@ html, body {
 }
 
 .navbar {
+    position: absolute;
+    height: 7vh;
+    z-index: 1;
+    background-color: white;
+    backdrop-filter: blur(1vh);
+    opacity: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
 
+.navbar .navbar-menu {
 }
 
 .swiper-container {
