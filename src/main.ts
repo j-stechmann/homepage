@@ -7,14 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const swiper of swipers) {
         new Swiper(swiper, {
             direction: 'vertical',
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoHeight: false
+            autoHeight: false,
+            resistance: true,
+            resistanceRatio: 0
         });
     }
 });

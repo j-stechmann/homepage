@@ -1,32 +1,85 @@
+:root {
+    --bg-color: #2f2f2f;
+    --primary-color: #0c2d7a;
+    --accent-color: #e4a9bd;
+}
+
 html, body {
     margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
+    overscroll-behavior: none;
+    position: relative;
+    scrollbar-color: white var(--bg-color);
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background: var(--bg-color);
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     height: 7vh;
-    z-index: 1;
-    background-color: white;
-    backdrop-filter: blur(1vh);
-    opacity: 50%;
-    margin: 1rem;
+    z-index: 2;
+    width: calc(100% - 4rem);
+    border-radius: 1rem;
     padding: 1rem;
+    margin: 1rem;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--primary-color);
+    backdrop-filter: blur(10px);
+    opacity: 50%;
     width: 100%;
+    top: 0;
+    left: 0;
     border-radius: 1rem;
 }
 
-.navbar .navbar-menu {
+.navbar-menu {
+    height: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
 }
 
-.swiper-container {
+.navbar-item {
+    padding: 0 1rem 0 1rem;
+}
+
+.swiper {
     width: 100%;
     height: 100%;
 }
-.swiper-slide {
 
+.swiper-slide {
+    text-align: center;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-img {
+
+.swiper-slide img {
+    display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
 }
