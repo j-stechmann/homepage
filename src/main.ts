@@ -7,9 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const swiper of swipers) {
         new Swiper(swiper, {
             direction: 'vertical',
-            autoHeight: false,
+            autoHeight: true,
             resistance: true,
-            resistanceRatio: 0
+            resistanceRatio: 0,
+            allowTouchMove: true,
+            mousewheel: true,
+            speed: 600,
         });
     }
 });
