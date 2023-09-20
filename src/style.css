@@ -123,9 +123,19 @@ a:hover {
     margin: 0;
 }
 
-footer {
+footer > div {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
+}
+
+.github-button, .linkedin-button {
+    display: inline-block;
+}
+
+.github-button img, .linkedin-button img {
+    height: 3rem;
+    width: 3rem;
     margin: 1rem;
 }
