@@ -1,73 +1,131 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1"
     >
     <title>Jonathan Stechmann's Website</title>
+    <link href="src/style.css"
+          rel="stylesheet"
+    >
+
+
+    <link href="/apple-touch-icon.png"
+          rel="apple-touch-icon"
+          sizes="180x180"
+    >
+    <link href="/favicon-32x32.png"
+          rel="icon"
+          sizes="32x32"
+          type="image/png"
+    >
+    <link href="/favicon-16x16.png"
+          rel="icon"
+          sizes="16x16"
+          type="image/png"
+    >
+    <link href="/site.webmanifest"
+          rel="manifest"
+    >
+    <link color="#5bbad5"
+          href="/safari-pinned-tab.svg"
+          rel="mask-icon"
+    >
+    <meta content="#0c2d7a"
+          name="msapplication-TileColor"
+    >
+    <meta content="#0c2d7a"
+          name="theme-color"
+    >
+
+
 </head>
 <body>
-<header class="container">
+<header>
     <nav class="navbar"
          role="navigation"
          aria-label="main navigation"
     >
-        <div class="navbar-brand">
-            <a role="button"
-               class="navbar-burger"
-               aria-label="menu"
-               aria-expanded="false"
-               data-target="navbar"
+        <div class="navbar-menu">
+            <a class="navbar-item"
+               href="/"
             >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                Home
             </a>
-        </div>
-
-        <div id="navbar"
-             class="navbar-menu"
-        >
-            <div class="navbar-start">
-                <a class="navbar-item" href="/">
-                    Home
-                </a>
-            </div>
+            <a class="navbar-item"
+               href="https://github.com/BlizzardWizzard"
+            >
+                GitHub
+            </a>
         </div>
     </nav>
 </header>
 <main>
-    <div class="is-fullwidth">
-        <figure class="image">
-            <img src="/header.webp"
-                 alt="Ein Landschaftsbild"
-            >
-        </figure>
-        <div class="section">
-            <div class="container">
-                <h1 class="title is-1">
-                    Work in Progress :)
-                </h1>
-                <p class="subtitle">
-                    I <span class="is-italic">just</span> got this domain lol
-                </p>
-            </div>
+    <div class="row">
+        <div class="col-1-3">
+            <figure class="teaser-img">
+                <img alt="Photograph of Jonathan Stechmann in a dark blue suit and peach polo shirt."
+                     decoding="async"
+                     height="960"
+                     loading="eager"
+                     src="/Bewerbungsfoto_skaliert_klein.webp"
+                     width="636"
+                >
+            </figure>
+        </div>
+        <div class="col-2-3">
+            <h1>👋 Experienced Web Developer | UX Enthusiast | Striving to shape a sustainable future 🌍</h1>
+            <h2>👨‍💻 About me:</h2>
+            <p>With four years of practical experience in web development, I have specialized in designing seamless digital experiences with technologies
+               such as CraftCMS, PHP, and TypeScript.
+               I have expertise in using tools like Webpack for efficient bundling and optimization of web applications.
+               My passion for writing clean, efficient, and optimized code that enhances the user experience goes beyond functionality.</p>
+            <h2>💻 UX Enthusiast:</h2>
+            <p>I am passionate about improving user experiences through intuitive and user-friendly design. My focus is on creating web solutions that not
+               only work flawlessly but are also pleasant to use.</p>
+            <h2>🤝 Let&#39;s get to know each other:</h2>
+            <p>If you share my passion for technology and have an unwavering commitment to exceptional user experiences, I would be delighted to get to know
+               you and explore a potential collaboration.</p>
         </div>
     </div>
 </main>
-
-<footer class="footer">
-    <div class="content has-text-centered">
+<footer>
+    <div>
+        <a aria-label="Visit Jonathan Stechmann's LinkedIn profile"
+           href="https://www.linkedin.com/in/jonathan-stechmann-b16192270"
+           rel="noopener noreferrer"
+           target="_blank"
+           class="linkedin-button"
+        >
+            <img alt="LinkedIn Logo"
+                 height="256"
+                 src="/In-White-128@2x.png"
+                 width="256"
+            />
+        </a>
+        <a aria-label="Visit Jonathan Stechmann's GitHub profile"
+           href="https://github.com/BlizzardWizzard"
+           rel="noopener noreferrer"
+           target="_blank"
+           class="github-button"
+        >
+            <img alt="GitHub Logo"
+                 src="/github-mark-white.svg"
+            >
+        </a>
+    </div>
+    <div>
         <p>
             © Jonathan Stechmann.
-            <a href="https://github.com/BlizzardWizzard/homepage">The source code</a> is
-            <a href="https://github.com/BlizzardWizzard/homepage/blob/master/LICENSE">licensed GPLv2</a>.
+            <a aria-label="View the source code of this website on GitHub"
+               href="https://github.com/BlizzardWizzard/homepage"
+            >The source code</a> is
+            <a aria-label="Read the license of this website on GitHub"
+               href="https://github.com/BlizzardWizzard/homepage/blob/master/LICENSE"
+            >licensed GPLv2</a>.
         </p>
     </div>
 </footer>
-<script type="module"
-        src="src/main.ts"
-></script>
 </body>
 </html>
